@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STOCKIFY</title>
+    <style>
+        body{
+           background-image: url('https://imageio.forbes.com/specials-images/imageserve/617ab453e95e58ee7ce7de16/Stock-market-investment-and-anxious-future/960x0.jpg?height=473&width=711&fit=bounds'); 
+           background-repeat: no-repeat;
+           background-size: cover;
+        }
+        .nav{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            background-color: rgb(6, 6, 61);
+            width: 2000px;
+            height: 50px;
+            margin-top: 0%;
+            position: relative;
+            top: -10px;
+            left: -12px;
+            right: -10px;
+        }
+        #left ul{
+            list-style: none;
+            text-decoration:none;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            padding: 10px;
+        }
+        #left ul a{
+            text-decoration: none;
+            padding: 10px;
+        }
+        #left ul li{
+            font-size: larger;
+            color: white;
+        }
+        #right ul{
+            list-style: none;
+            display: flex;
+            flex-direction: row;
+
+        }
+        #right ul li{
+            font-size: larger;
+            color: white;
+            align-items:flex-end;
+            justify-content: flex-end;
+            position: relative;
+            left: 900px;
+        }
+        #right ul a{
+            text-decoration: none;
+            padding: 10px;
+        }
+        #curr{
+            position: relative;
+            top:10px;
+            right: 30px;
+            
+        }
+        #lang{
+            position: relative;
+            top:10px;
+        }
+        form {
+            display: inline-block;
+            margin: 0;
+        }
+
+.navbar {
+    list-style: none;
+    padding: 50px;
+    margin: 10px;
+    display: flex;
+    justify-content: flex-end;
+}
+#rights{
+    position: relative;
+    left: 150px;
+    padding: 0%;
+}
+
+.navbar li {
+    position: relative;
+    right: 180px;
+    padding: 10px;
+    margin: 20px;
+    bottom:160px;
+    font-size: large;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #fff;
+    display: block;
+}
+
+.navbar a:hover {
+    background-color: #333;
+    color: #ff9900;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content select {
+    background-color: #000;
+    color: #fff;
+    border: none;
+    padding: 15px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100%;
+}
+
+.dropdown-content select option {
+    background-color: #333;
+    color: #fff;
+}
+
+.dropdown-content select:hover {
+    background-color: #575757;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropbtn {
+    cursor: pointer;
+}
+#lefts{
+    font-size: xxx-large;
+    color: rgb(255, 251, 0);
+    position: relative;
+    left: 80px;
+    top: 10px;
+}
+#btn{
+    position: relative;
+    bottom: 140px;
+    right: 500px;
+    background-color: orange;
+    font-size: larger;
+    color: white;
+    right: 140px;
+    height: 40px;
+}
+.main{
+    font-size: xxx-large;
+    color: white;
+    text-align: center;
+    font-weight: bolder;
+    position: relative;
+    bottom: 100px;
+}
+.buttons{
+    position: relative;
+    left: 650px;
+    bottom: 100px;
+}
+#btn1{
+    font-size: x-large;
+    padding: 15px;
+    background: none;
+    color: white;
+    font-weight: bolder;
+}
+#btn1:hover{
+    background-color: orange;
+}
+#btn2{
+    font-size: x-large;
+    padding: 15px;
+    background-color: orange;
+    color: white;
+    font-weight: bolder;
+}
+.icon{
+    position: relative;
+    left:10px;
+}
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <div id="left">
+        <ul>
+        <span class="icon">❓</span>
+        <a href="1.html"><li>Ask a Question</li></a>
+        <span class="icon">✉️</span>
+        <a href="1.html"><li>stockify@gmail.com</li></a>
+        </ul>
+        </div>
+        <div id="right">
+            <ul>
+                <li>
+                    <form action="/action_page.php">
+                        <select name="curr" id="curr">
+                          <option value="USD">USD</option>
+                          <option value="EUR">EUR</option>
+                          <option value="IND">IND</option>
+                        </select>
+                        <br><br>
+                      </form>
+                </li>
+                <li>
+                    <form action="/action_page.php">
+                        <select name="lang" id="lang">
+                          <option value="ENG USA">ENG USA</option>
+                          <option value="ENG UK">ENG UK</option>
+                        </select>
+                        <br><br>
+                      </form>
+                </li>
+                <a href=""><li>Login</li></a>
+                <a href=""><li>My Account</li></a>
+            </ul>
+        </div>
+    </div>
+    <div class="second">
+        <div id="lefts">
+            <p>Stock Admin</p>
+        </div>
+        <div id="rights">
+            <ul class="navbar">
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">HOME</a>
+                    <div class="dropdown-content">
+                        <form action="/action_page.php">
+                            <select name="HOME" id="home">
+                                <option value="OPTION1">OPTION 1</option>
+                                <option value="OPTION2">OPTION 2</option>
+                            </select>
+                        </form>
+                    </div>
+                </li>
+                <li><a href="#">INSTANT BUY & SELL</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">NEWS</a>
+                    <div class="dropdown-content">
+                        <form action="/action_page.php">
+                            <select name="NEWS" id="news">
+                                <option value="OPTION 1">OPTION 1</option>
+                                <option value="OPTION2">OPTION 2</option>
+                            </select>
+                        </form>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">MARKET</a>
+                    <div class="dropdown-content">
+                        <form action="/action_page.php">
+                            <select name="MARKET" id="market">
+                                <option value="OPTION1">OPTION 1</option>
+                                <option value="OPTION2">OPTION 2</option>
+                            </select>
+                        </form>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">SHARE PRICE AND ANALYSIS</a>
+                    <div class="dropdown-content">
+                        <form action="/action_page.php">
+                            <select name="BLOG" id="blog">
+                                <option value="OPTION1">OPTION 1</option>
+                                <option value="OPTION2">OPTION 2</option>
+                            </select>
+                        </form>
+                    </div>
+                </li>
+                <li><a href="#">CONTACT</a></li>
+                <button id="btn">Register Now</button>
+            </ul>
+        </div>
+    </div>
+    <div class="main">
+        <p>Buy & Sell 100+ Stocks instantly</p>
+    </div>
+    <div class="buttons">
+        <button id="btn1">Visit Exchange</button>
+        <button id="btn2">Sign up Now</button>
+    </div>
+    
+</body>
+</html>
